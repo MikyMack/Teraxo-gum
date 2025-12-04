@@ -1466,16 +1466,17 @@ textarea:focus {
   color: var(--rs-black);
 }
 .rs-btn.has-theme-light-blue {
-  background: var(--rs-theme-light-blue);
+  background: #507a7c;
 }
 .rs-btn.has-theme-light-blue.has-bg::before {
-  background-color: #0C7BC7;
+  background-color: rgb(124, 6, 6);
 }
 .rs-btn.has-theme-light-green {
   background: var(--rs-theme-light-green);
+  color: white;
 }
 .rs-btn.has-theme-light-green.has-bg::before {
-  background-color: #375B5D;
+  background-color: rgb(124, 6, 6);
 }
 .rs-btn.has-theme-light-green.has-bg-white {
   color: var(--rs-theme-green);
@@ -3450,6 +3451,9 @@ input[type=checkbox] ~ label:hover {
 .rs-theme-social.has-bg a {
   background: #E6E6E9;
   color: #737373;
+}
+.rs-theme-social a i{
+  color: ;
 }
 .rs-theme-social.has-bg a:hover {
   background: var(--rs-theme-orange);
@@ -7366,7 +7370,7 @@ html.lenis body {
 /*  3.5.8 Header Common Style 
 /*----------------------------------------*/
 .rs-header-logo img {
-  max-width: 180px;
+  max-width: 80px;
 }
 .rs-header-search-wrapper {
   position: relative;
@@ -7972,7 +7976,7 @@ html.lenis body {
   }
 }
 .rs-banner-four .rs-banner-stroke-text span {
-  font-size: 150px;
+  font-size: 10px;
   font-weight: 600;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   text-shadow: rgba(255, 255, 255, 0) 1px 1px 1px;
@@ -9499,7 +9503,7 @@ html.lenis body {
   z-index: 1;
 }
 .rs-banner-twelve .rs-banner-stroke-text {
-  font-size: 150px;
+  font-size: 60px;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
   color: transparent;
   font-weight: 700;
@@ -9510,7 +9514,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 1600px) {
   .rs-banner-twelve .rs-banner-stroke-text {
-    font-size: 120px;
+    font-size: 60px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -9581,6 +9585,7 @@ html.lenis body {
 .rs-banner-twelve .swiper-slide-active .rs-banner-title {
   animation-delay: 0.5s;
   animation-duration: 0.9s;
+ 
 }
 .rs-banner-twelve .swiper-slide-active .rs-banner-descrip {
   animation-delay: 0.7s;
@@ -9590,7 +9595,10 @@ html.lenis body {
   animation-delay: 0.9s;
   animation-duration: 1.3s;
 }
-
+.bnr-title{
+  font-size: 55px!important;
+  color: white;
+}
 /*----------------------------------------*/
 /*  3.1.13 Banner Style 13
 /*----------------------------------------*/
@@ -10495,10 +10503,10 @@ html.lenis body {
   color: var(--rs-theme-blue);
 }
 .rs-header-area.has-bg-blue {
-  background: rgba(20, 35, 64, 0.4);
+  background: rgba(249, 249, 249, 0.4);
 }
 .rs-header-area.has-bg-blue.rs-sticky-header {
-  background: rgba(20, 35, 64, 0.9);
+  background: rgba(255, 255, 255, 0.9);
 }
 .rs-header-area.has-bg-blue .main-menu ul li.active > a {
   color: var(--rs-theme-red);
@@ -15698,6 +15706,9 @@ html.lenis body {
 .rs-cta-two .rs-cta-input {
   position: relative;
 }
+.rs-services-bg-thumb,.btn-bg{
+  background-color: #507a7c!important;
+}
 .rs-cta-two .rs-cta-input input {
   background: var(--rs-white);
   border-radius: 83px 83px 83px 83px;
@@ -15706,6 +15717,9 @@ html.lenis body {
   width: 100%;
   padding-inline-end: 245px;
   padding-inline-start: 30px;
+}
+.small{
+  color: white;
 }
 @media only screen and (max-width: 480px) {
   .rs-cta-two .rs-cta-input input {
@@ -17827,6 +17841,10 @@ html.lenis body {
   display: flex;
   gap: 10px;
 }
+.rs-testimonial-four .rs-testimonial-slider-wrapper .swiper-slide {
+  height: auto;
+  display: flex;
+}
 .rs-testimonial-four .rs-testimonial-slider-wrapper .swiper-slide.swiper-slide-active {
   background-color: #F9FAFA;
   box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.24);
@@ -17834,6 +17852,9 @@ html.lenis body {
 .rs-testimonial-four .rs-testimonial-item {
   position: relative;
   padding: 35px 40px 35px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 @media only screen and (max-width: 1199px) {
   .rs-testimonial-four .rs-testimonial-item {
@@ -17867,6 +17888,7 @@ html.lenis body {
 }
 .rs-testimonial-four .rs-testimonial-description {
   margin-bottom: 25px;
+  flex-grow: 1;
 }
 .rs-testimonial-four .rs-testimonial-description p {
   font-size: 18px;
@@ -18652,8 +18674,12 @@ html.lenis body {
 @media only screen and (max-width: 575px) {
   .rs-why-choose-four .rs-why-choose-tab .nav-link {
     width: 100%;
+
   }
 }
+  .rs-why-choose-four .rs-why-choose-tab .nav-link:hover {
+    color: black!important;
+  }
 .rs-why-choose-four .rs-why-choose-tab .nav-link::after {
   width: 100%;
   height: 3px;
@@ -18664,14 +18690,16 @@ html.lenis body {
   content: "";
   inset-inline-start: -1px;
   top: 0;
-  background-color: var(--rs-theme-deep-blue);
+  background-color: red;
+  color: red!important;
   border-radius: 0;
 }
 .rs-why-choose-four .rs-why-choose-tab .nav-link.active {
-  color: var(--rs-theme-deep-blue);
+  color: rgb(104, 15, 15)!important;
 }
 .rs-why-choose-four .rs-why-choose-tab .nav-link.active::after {
   transform: scaleX(1);
+  background-color: red;
 }
 .rs-why-choose-four .rs-why-choose-tab .nav-link:hover {
   color: var(--rs-theme-deep-blue);
@@ -20677,8 +20705,8 @@ html.lenis body {
   position: relative;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--rs-white);
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #033b4b!important;
   line-height: 0.9;
   display: inline-flex;
   align-items: center;
@@ -20698,7 +20726,7 @@ html.lenis body {
   width: 60px;
 }
 .rs-text-slide-two {
-  padding: 60px 0 60px 0;
+  padding: 0px 0 60px 0;
 }
 .rs-text-slide-two .rs-text-slide-wrapper {
   display: flex;
@@ -20713,6 +20741,7 @@ html.lenis body {
   align-items: center;
   gap: 30px;
 }
+
 .rs-text-slide-two .rs-text-slide-title {
   font-size: 80px;
   font-weight: 600;
@@ -20720,7 +20749,7 @@ html.lenis body {
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgba(31, 31, 31, 0.12);
+  -webkit-text-stroke-color: rgba(19, 90, 128, 0.12);
   line-height: 1.2;
   display: inline-flex;
   align-items: center;
@@ -20732,7 +20761,7 @@ html.lenis body {
   }
 }
 .rs-text-slide-two.has-theme-cyan .rs-text-slide-title {
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 3.5px;
   -webkit-text-stroke-color: rgba(20, 85, 170, 0.3803921569);
 }
 .rs-text-slide-three {
@@ -21648,6 +21677,7 @@ html.lenis body {
 .rs-portfolio-eight .rs-portfolio-thumb {
   position: relative;
   z-index: 1;
+  max-height: 410px;
 }
 .rs-portfolio-eight .rs-portfolio-thumb::before {
   position: absolute;
@@ -24400,7 +24430,7 @@ html.lenis body {
   position: relative;
 }
 .rs-work-step-three.has-theme-cyan .rs-work-step-number::before {
-  background: var(--rs-theme-cyan);
+  background: #507a7c;
 }
 .rs-work-step-four .rs-work-step-section-title {
   font-size: 200px;
