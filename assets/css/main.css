@@ -199,7 +199,7 @@ h6, .body__overlay {
   --rs-white: #FFFFFF;
   --rs-black: #1F1F1F;
   --rs-light: #eee;
-  --rs-theme-orange: #EA5501;
+  --rs-theme-orange: #d31b1b;
   --rs-theme-red: #E30613;
   --rs-theme-blue: #005EB8;
   --rs-theme-light-blue: #0D80CE;
@@ -1421,7 +1421,7 @@ textarea:focus {
   color: var(--rs-white);
 }
 .rs-btn.has-theme-orange {
-  background: var(--rs-theme-orange);
+  background: var(--rs-theme-light-green);
 }
 .rs-btn.has-theme-red {
   background: var(--rs-theme-red);
@@ -2577,7 +2577,7 @@ textarea:focus {
   border-color: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-green .offcanvas-close {
-  background: var(--rs-theme-green);
+  background: var(--rs-theme-light-green);
 }
 .offcanvas-area.has-theme-green .mean-container .mean-nav ul li.active > a {
   color: var(--rs-theme-green);
@@ -3580,7 +3580,7 @@ input[type=checkbox] ~ label:hover {
   -webkit-transition: all 400ms linear;
   -o-transition: all 400ms linear;
   transition: all 400ms linear;
-  background: var(--rs-theme-orange);
+  background: var(--rs-theme-light-green);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 .backtotop-wrap:hover {
@@ -5938,7 +5938,7 @@ html.lenis body {
 .rs-header-one .rs-header-logo-wrapper {
   width: 295px;
   height: 98px;
-  background-color: var(--rs-bg-primary);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5961,6 +5961,13 @@ html.lenis body {
 @media only screen and (max-width: 991px) {
   .rs-header-one .rs-header-logo-wrapper {
     height: 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .rs-header-one .rs-header-logo-wrapper {
+   .rs-header-one .rs-header-inner{
+
+   }
   }
 }
 .rs-header-one .rs-header-left {
@@ -6521,14 +6528,17 @@ html.lenis body {
   }
 }
 @media only screen and (max-width: 1199px) {
-  .rs-header-five .rs-header-logo-wrapper {
-    height: 90px;
-  }
+header{
+  height: 90px;
+  padding-top: 1rem;
+
+}
+}
+.rs-header-logo-wrapper{
+  height: auto!important;
 }
 @media only screen and (max-width: 991px) {
-  .rs-header-five .rs-header-logo-wrapper {
-    height: 80px;
-  }
+
 }
 .rs-header-five .rs-header-logo {
   position: relative;
@@ -6592,11 +6602,7 @@ html.lenis body {
     padding: 15px 20px;
   }
 }
-.rs-header-five .main-menu {
-  border-inline-start: 1px solid rgba(31, 31, 31, 0.07);
-  padding-inline-start: 30px;
-  margin-inline-start: 50px;
-}
+
 @media only screen and (max-width: 1700px) {
   .rs-header-five .main-menu {
     margin-inline-start: 30px;
@@ -6756,6 +6762,9 @@ html.lenis body {
     display: none;
   }
 }
+@media only screen and (max-width: 767px) {
+
+}
 .rs-header-six .rs-sticky .rs-header-left {
   margin-inline-start: 0px;
   margin-top: 0;
@@ -6783,6 +6792,7 @@ html.lenis body {
     width: 190px;
   }
 }
+
 .rs-header-six .rs-sticky .main-menu li a {
   padding: 41px 20px;
 }
@@ -11757,13 +11767,17 @@ html.lenis body {
 }
 .rs-postbox-details-title {
   font-size: 40px;
-  margin-top: 20px;
+ margin-top: -3rem;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1600px) {
   .rs-postbox-details-title {
     font-size: 35px;
   }
+}
+.rs-contact-nine .rs-contact-icon:hover {
+  background-color: red;
+
 }
 @media only screen and (max-width: 1199px) {
   .rs-postbox-details-title {
@@ -12082,6 +12096,7 @@ html.lenis body {
   border-radius: 2px;
   font-size: 17px;
 }
+
 .sidebar-widget.widget-categories-two ul li a:hover {
   background: var(--rs-theme-orange);
   border-color: var(--rs-theme-orange);
@@ -12093,18 +12108,9 @@ html.lenis body {
 .sidebar-widget.widget-cta {
   position: relative;
   z-index: 1;
-  height: 600px;
+
 }
-@media only screen and (max-width: 1199px) {
-  .sidebar-widget.widget-cta {
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .sidebar-widget.widget-cta {
-    height: 400px;
-  }
-}
+
 .sidebar-widget.widget-cta::before {
   content: none;
 }
@@ -20405,6 +20411,8 @@ html.lenis body {
 .rs-services-details-wrapper .rs-services-details-thumb img {
   width: 100%;
   border-radius: 4px;
+  height: 550px;
+  object-fit: cover;
 }
 .rs-services-details-wrapper .rs-services-details-title {
   font-size: 36px;
@@ -20839,6 +20847,8 @@ html.lenis body {
 .rs-portfolio-one .rs-portfolio-thumb img {
   width: 100%;
   border-radius: 2px;
+  object-fit: contain!important;
+
 }
 .rs-portfolio-one .rs-portfolio-thumb.has-clip-path {
   clip-path: polygon(0% 0%, 88% 0, 100% 10%, 100% 100%, 0% 100%);
@@ -21411,6 +21421,7 @@ html.lenis body {
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .rs-portfolio-six .rs-portfolio-content {
   background: var(--rs-theme-yellow);
@@ -21495,9 +21506,12 @@ html.lenis body {
   background: var(--rs-theme-yellow);
 }
 .rs-portfolio-six.has-theme-orange .rs-portfolio-content {
-  background: var(--rs-black);
-  border: none;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
 .rs-portfolio-six.has-theme-orange .rs-portfolio-title {
   color: var(--rs-white);
 }
@@ -21505,7 +21519,7 @@ html.lenis body {
   color: var(--rs-theme-orange);
 }
 .rs-portfolio-six.has-theme-orange .rs-portfolio-tag a {
-  color: #B3B3B3;
+  color: white;
 }
 .rs-portfolio-six.has-theme-orange .rs-portfolio-tag a:hover {
   color: var(--rs-theme-orange);
@@ -21520,7 +21534,8 @@ html.lenis body {
   border-color: rgba(255, 255, 255, 0.08);
 }
 .rs-portfolio-six.has-theme-orange .rs-square-btn {
-  background: var(--rs-theme-orange);
+  background: var(--rs-theme-light-green);
+  border-radius: 50px;
 }
 .rs-portfolio-six.has-theme-orange .rs-square-btn .icon-box svg path {
   fill: var(--rs-white);
@@ -23293,7 +23308,7 @@ html.lenis body {
   background: var(--rs-theme-orange);
 }
 .rs-contact-nine .rs-contact-item:hover .rs-contact-icon svg path {
-  fill: var(--rs-white);
+  fill: var(--rs-theme-red);
 }
 .rs-contact-nine .rs-contact-content a {
   display: block;
@@ -23336,7 +23351,7 @@ html.lenis body {
   z-index: 1;
   border-radius: 4px;
   box-shadow: 0px 0px 0px 5px #FFF;
-  border-top: 4px solid var(--rs-theme-orange);
+  border-top: 4px solid var(--rs-theme-blue);
 }
 @media only screen and (max-width: 1600px) {
   .rs-contact-ten .rs-contact-form {
@@ -23382,7 +23397,7 @@ html.lenis body {
   border-color: var(--rs-theme-orange);
 }
 .rs-contact-ten .rs-contact-btn .rs-btn:hover {
-  background: rgb(255, 92, 0);
+  background: var(--rs-theme-orange);
 }
 
 .rs-map-one {
@@ -23973,6 +23988,7 @@ html.lenis body {
 .rs-gallery-one .rs-gallery-item {
   position: relative;
 }
+
 .rs-gallery-one .rs-gallery-item:hover .rs-gallery-content-wrap {
   bottom: 30px;
   opacity: 1;
@@ -28533,5 +28549,1024 @@ a.ui-button:active {
   -webkit-box-shadow: 0 0 5px #666;
   box-shadow: 0 0 5px #666;
 }
+  .premium-feature {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(234, 85, 1, 0.1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
 
+    
+
+        .premium-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .premium-feature .rs-feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgba(255, 253, 252, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .premium-feature:hover .rs-feature-icon {
+            background-color: #01a4ea;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .premium-feature .rs-feature-icon i {
+            font-size: 28px;
+            color: #01a4ea;
+            transition: all 0.3s ease;
+        }
+
+        .premium-feature:hover .rs-feature-icon i {
+            color: #fff;
+        }
+
+        .premium-feature .rs-feature-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .premium-feature:hover .rs-feature-title {
+            color: #0195ea;
+        }
+
+        .premium-feature p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 991px) {
+            .premium-feature {
+                padding: 25px;
+            }
+        }
+    @media (max-width: 1181px) {
+            .premium-feature {
+                padding: 25px;
+            }
+        }
+        @media (max-width: 767px) {
+            .premium-feature {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .premium-feature .rs-feature-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .premium-feature .rs-feature-icon i {
+                font-size: 24px;
+            }
+
+            .premium-feature .rs-feature-title {
+                font-size: 18px;
+            }
+
+            .premium-feature p {
+                font-size: 15px;
+            }
+        }
+              /* Hero Section Enhancement */
+        .rs-breadcrumb-area.rs-breadcrumb-one {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .rs-breadcrumb-title {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        @media (max-width: 767px) {
+            .rs-breadcrumb-title {
+                font-size: 36px;
+            }
+        }
+        
+        /* Introduction Section */
+        .why-teraxo-intro {
+            padding: 100px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .why-teraxo-intro .section-title-space {
+            margin-bottom: 60px;
+        }
+        
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        
+        .intro-highlight-box {
+            background: linear-gradient(135deg, #1a5d7a 0%, #2a8cb5 100%);
+            border-radius: 12px;
+            padding: 40px;
+            color: #fff;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        
+        .intro-highlight-box h3 {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .intro-highlight-box p {
+            font-size: 17px;
+            opacity: 0.9;
+            margin-bottom: 0;
+        }
+        
+        /* Benefits Section */
+        .why-teraxo-benefits {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .benefit-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #1a5d7a 0%, #2a8cb5 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        
+        .benefit-icon i {
+            font-size: 30px;
+            color: #fff;
+        }
+        
+        .benefit-card h4 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #1a5d7a;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+        
+        /* Industries Section */
+        .why-teraxo-industries {
+            padding: 100px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .industry-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #2a8cb5;
+        }
+        
+        .industry-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .industry-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(42, 140, 181, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .industry-icon i {
+            font-size: 24px;
+            color: #2a8cb5;
+        }
+        
+        .industry-card h5 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .industry-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        
+        /* Comparison Section */
+        .why-teraxo-comparison {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .comparison-table {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            margin-top: 50px;
+        }
+        
+        .table-header {
+            background: linear-gradient(135deg, #1a5d7a 0%, #2a8cb5 100%);
+            color: #fff;
+            padding: 25px 30px;
+        }
+        
+        .table-header h3 {
+            color: #fff;
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th {
+            background-color: #f8f9fa;
+            padding: 20px 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table td {
+            padding: 20px 15px;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .teraxo-advantage {
+            color: #1a5d7a;
+            font-weight: 600;
+        }
+        
+        /* CTA Section */
+        .why-teraxo-cta {
+            padding: 100px 0;
+            background: var(--rs-theme-light-green);
+            color: #fff;
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-content p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-btn-primary {
+            background: #fff;
+            color: #1a5d7a;
+            padding: 16px 40px;
+         
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-btn-primary:hover {
+            background: #f8f9fa;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            color: #1a5d7a;
+        }
+        
+        .cta-btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 16px 40px;
+       
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        
+        /* Stats Section */
+        .why-teraxo-stats {
+          
+            background-color: #f8f9fa;
+        }
+        .prd{
+          height:450px;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-number {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a5d7a;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 991px) {
+            .why-teraxo-intro,
+            .why-teraxo-benefits,
+            .why-teraxo-industries,
+            .why-teraxo-comparison,
+            .why-teraxo-cta {
+                padding: 80px 0;
+            }
+            
+            .cta-content h2 {
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .why-teraxo-intro,
+            .why-teraxo-benefits,
+            .why-teraxo-industries,
+            .why-teraxo-comparison,
+            .why-teraxo-cta {
+                padding: 60px 0;
+            }
+            
+            .intro-highlight-box {
+                padding: 30px;
+            }
+            
+            .benefits-grid,
+            .industries-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                overflow-x: auto;
+            }
+            
+            .comparison-table table {
+                min-width: 600px;
+            }
+            
+            .cta-content h2 {
+                font-size: 26px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-btn-primary,
+            .cta-btn-secondary {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .stat-number {
+                font-size: 36px;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+
+        /* Product Card Styles */
+.rs-product-area {
+  padding: 60px 0;
+}
+
+.rs-product-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rs-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.rs-product-image {
+  overflow: hidden;
+  height: 250px;
+}
+
+.rs-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.rs-product-card:hover .rs-product-image img {
+  transform: scale(1.05);
+}
+
+.rs-product-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rs-product-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.rs-product-desc {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.rs-product-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.rs-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  text-decoration: none;
+  flex: 1;
+}
+
+.details-btn {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #e0e0e0;
+}
+
+.details-btn:hover {
+  background-color: #eeeeee;
+  color: #333;
+}
+
+.contact-btn {
+  background-color: #4075ab;
+  color: white;
+  border: 1px solid #4075ab;
+}
+
+.contact-btn:hover {
+  background-color: #2E7D32;
+  border-color: #2E7D32;
+  color: white;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 991px) {
+  .rs-product-image {
+    height: 220px;
+  }
+  
+  .rs-product-title {
+    font-size: 18px;
+  }
+  
+  .rs-product-desc {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .rs-product-area {
+    padding: 40px 0;
+  }
+  
+  .rs-product-image {
+    height: 200px;
+  }
+  
+  .rs-product-content {
+    padding: 15px;
+  }
+  
+  .rs-product-title {
+    font-size: 17px;
+  }
+  
+  .rs-product-desc {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .rs-btn {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .rs-product-image {
+    height: 180px;
+  }
+  
+  .rs-product-content {
+    padding: 12px;
+  }
+  
+  .rs-product-title {
+    font-size: 16px;
+  }
+  
+  .rs-product-desc {
+    font-size: 13px;
+  }
+  
+  .rs-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Product Gallery Styles */
+#main-product-image {
+  transition: opacity 0.3s ease;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: calc(25% - 8px);
+  max-width: 100px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  aspect-ratio: 1/1;
+
+}
+
+.gallery-item:hover {
+  border-color: #4075ab;
+  transform: translateY(-3px);
+}
+
+.gallery-item.active {
+  border-color: #4075ab;
+  box-shadow: 0 0 10px rgba(64, 117, 171, 0.2);
+}
+
+/* Product Gallery Styles */
+#main-product-image {
+  transition: opacity 0.3s ease;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: calc(25% - 8px);
+  max-width: 100px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  aspect-ratio: 1/1;
+}
+
+.gallery-item:hover {
+  border-color: #4075ab;
+  transform: translateY(-3px);
+}
+
+.gallery-item.active {
+  border-color: #4075ab;
+  box-shadow: 0 0 10px rgba(64, 117, 171, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Challenge Card Styles */
+.challenge-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #4075ab;
+}
+
+.challenge-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(64, 117, 171, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.challenge-icon i {
+  font-size: 28px;
+  color: #4075ab;
+}
+
+.challenge-card h5 {
+  color: #333;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.challenge-card p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+/* Sidebar active link */
+.widget-categories-two ul li a.active {
+  color: #4075ab;
+  font-weight: 600;
+}
+
+.widget-categories-two ul li a.active i {
+  color: #4075ab;
+}
+
+/* Application Card Styles */
+.application-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #4075ab;
+}
+
+.application-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(64, 117, 171, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.application-icon i {
+  font-size: 28px;
+  color: #4075ab;
+}
+
+.application-card h5 {
+  color: #333;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.application-card p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+/* Benefit Card Styles */
+.benefit-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #4075ab;
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(64, 117, 171, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.benefit-icon i {
+  font-size: 28px;
+ color: #4075ab;
+}
+
+.benefit-card h5 {
+  color: #333;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.benefit-result {
+  background: rgba(76, 175, 80, 0.05);
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-left: 3px solid #3B82F6;
+}
+
+.result-label {
+  font-weight: 600;
+  color: #4075ab;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.result-text {
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Product Feature Small Cards */
+.product-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.feature-small-card {
+  display: flex;
+  align-items: center;
+  background: rgba(76, 175, 80, 0.03);
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.feature-small-card:hover {
+  background: rgba(76, 175, 80, 0.08);
+  transform: translateY(-2px);
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(64, 117, 171, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.feature-icon i {
+  font-size: 18px;
+  color: #4075ab;
+}
+
+.feature-text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 991px) {
+  .gallery-item {
+    width: calc(25% - 8px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery-item {
+    width: calc(33.33% - 7px);
+  }
+}
+.blog-details-img{
+  height: 500px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 480px) {
+  .gallery-item {
+    width: 100%;
+  }
+  .blog-details-img{
+  height: 300px;
+  object-fit: cover;
+}
+  .product-gallery {
+    overflow: hidden;
+  }
+  
+  .product-gallery .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .product-gallery .swiper-slide {
+    text-align: center;
+    background: #fff;
+    
+    /* Center slide content vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-gallery .swiper-pagination {
+    bottom: -20px;
+  }
+  
+  .product-gallery .swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+  }
+  
+  .product-gallery .swiper-pagination-bullet-active {
+    background: #4CAF50;
+  }
+  
+  .rs-services-details-wrapper .rs-services-details-thumb img{
+    height:300px
+  }
+}
 /*# sourceMappingURL=main.css.map */
