@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/vendor/remixicon.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/floating-buttons.css">
 </head>
 
 <body class="rs-smoother-yes rtl">
@@ -64,13 +65,13 @@
                      
                         <nav id="mobile-menu" class="main-menu">
                             <ul class="multipage-menu">
-                                <li class="has-mega-menu menu-item-has-children">
+                                <li >
                                     <a href="index.html">Home</a>
                                  
                                 </li>
                                 <!-- about menu -->
                                 <li class="menu-item-has-children">
-                                    <a href="about.html">About</a>
+                                    <a href="company-overview.html">About</a>
                                     <ul class="submenu last-children">
                                         <li><a href="company-overview.html">Company Overview</a></li>
                                     <li><a href="why-choose.html">Why Teraxo </a></li>
@@ -91,7 +92,7 @@
                                 <!-- elements menu -->
                           
    <li class="menu-item-has-children">
-                                    <a href="products.html">Industries</a>
+                                    <a href="industry-footwear.html">Industries</a>
                                     <ul class="submenu last-children">
                                         <li><a href="industry-footwear.html">Footwear Manufacturing</a></li>
                                     <li><a href="industry-signage.html">Signage & Flex Board</a></li>
@@ -379,7 +380,8 @@
                 <div class="swiper-slide">
                     <div class="rs-banner-item-wrapper">
                         <div class="rs-banner-bg-thumb" data-background="assets/images/teraxo/banner-3.jpg"></div>
-                        <div class="container">
+                        <div class="banner-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
+                        <div class="container" style="position: relative; z-index: 2;">
                             <div class="row g-5">
                                 <div class="col-xl-9 col-lg-10">
                                     <div class="rs-banner-item">
@@ -419,7 +421,8 @@
                 <div class="swiper-slide">
                     <div class="rs-banner-item-wrapper">
                         <div class="rs-banner-bg-thumb" data-background="assets/images/teraxo/banner-2.jpg"></div>
-                        <div class="container">
+                        <div class="banner-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
+                        <div class="container" style="position: relative; z-index: 2;">
                             <div class="row g-5">
                                 <div class="col-xl-9 col-lg-10">
                                     <div class="rs-banner-item">
@@ -483,7 +486,7 @@
     <div class="rs-services-shape">
         <img src="assets/images/shape/wave-shape-01.png" alt="shape">
     </div>
-    <div class="container">
+    <div class="container" style="position: relative; z-index: 2;">
         <div class="row g-5 section-title-space align-items-center">
             <div class="col-xl-12 ">
                 <div class="rs-section-title-wrapper">
@@ -823,7 +826,7 @@
 <section class="rs-why-choose-area mt-100 section-space rs-why-choose-four">
     <div class="rs-why-choose-bg-thumb" data-background="assets/images/bg/why-choose-bg-02.png">
     </div>
-    <div class="container">
+    <div class="container" style="position: relative; z-index: 2;">
         <div class="row justify-content-end">
             <div class="col-xl-7 col-lg-8 col-md-10">
                 <div class="rs-why-choose-wrapper">
@@ -1553,7 +1556,7 @@
 
         <!-- counter area start -->
 <div class="rs-counter-area rs-counter-one section-space-bottom p-relative has-theme-green">
-    <div class="container">
+    <div class="container" style="position: relative; z-index: 2;">
         <div class="row g-5 justify-content-center text-center">
 
             <!-- Counter 1 -->
@@ -1617,7 +1620,7 @@
   
   
 
-    <div class="container">
+    <div class="container" style="position: relative; z-index: 2;">
         <div class="row align-items-xl-center g-5">
 
             <!-- FAQ CONTENT -->
@@ -1838,7 +1841,7 @@
 
         <!-- blog area start -->
 <section class="rs-blog-area section-space-bottom rs-blog-two has-theme-green">
-    <div class="container">
+    <div class="container" style="position: relative; z-index: 2;">
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-8 col-lg-9">
                 <div class="rs-section-title-wrapper text-center section-title-space">
@@ -1989,7 +1992,7 @@
     <div style="padding-bottom: 0!important;" class="rs-footer-area pb-0 rs-footer-two has-space has-theme-green has-bg-thumb">
 
         <div class="rs-footer-top">
-            <div class="container">
+            <div class="container" style="position: relative; z-index: 2;">
                 <div class="row g-5">
 
                     <!-- ABOUT -->
@@ -2100,7 +2103,7 @@
         <div class="rs-footer-copyright-area rs-copyright-one has-theme-green">
            
 
-            <div class="container">
+            <div class="container" style="position: relative; z-index: 2;">
                 <div class="row justify-content-center">
                     <div class="col-xl-12">
 
@@ -2161,6 +2164,7 @@
     <script src="assets/js/vendor/purecounter.js"></script>
     <script src="assets/js/vendor/odometer.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/floating-buttons.js"></script>
 </body>
 
 
